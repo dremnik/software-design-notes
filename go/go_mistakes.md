@@ -1,4 +1,5 @@
-**7 Common Mistakes in Go and when to avoid them**
+7 Common Mistakes in Go and when to avoid them
+------------------------------------------------
 
 **1. Not accepting interfaces**
 * Interfaces capture both state and behavior, two of the fundamental concepts in programming.
@@ -49,6 +50,6 @@
   * *Channels* coordinate values across goroutines by permitting one goroutine to acces at a time.
 
 
-Failure is a manifestation of learning and exploration. 
-If you aren't experiencing failure, then you are making a far worse mistake.
-You are being driven by the desire to avoid it. -Ed Catmull
+>Failure is a manifestation of learning and exploration. 
+>If you aren't experiencing failure, then you are making a far worse mistake.
+>You are being driven by the desire to avoid it. -Ed Catmull
