@@ -53,3 +53,5 @@
 >Failure is a manifestation of learning and exploration. 
 >If you aren't experiencing failure, then you are making a far worse mistake.
 >You are being driven by the desire to avoid it. -Ed Catmull
+
+Source: [7 Common Mistakes in Go](https://www.youtube.com/watch?v=29LLRKIL_TI)
