@@ -24,3 +24,4 @@ SOLID Go Design
   depend on abstractions.
   Abstractions should not depend on details. Details should depend on abstractions.
 
+Source: [SOLID Go Design](https://www.youtube.com/watch?v=zzAdEt3xZ1M)
