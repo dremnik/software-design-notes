@@ -35,3 +35,5 @@ The Zen of Go
 * Every time you indent you add another precondition to the programmer's stack, consuming one
   of their 7 short term memory slots. Rather than nesting deeply, keep the successful path
   close to the left hand side of the screen.
+
+Source: [Small ideas | Dave Cheney] (https://dave.cheney.net/category/small-ideas)
