@@ -1,5 +1,4 @@
-Debugging
----------
+# Debugging
 
 **Look for familiar patterns**
 * Think about common error patterns that occur, such as not initializing variables, or not using &
@@ -22,7 +21,8 @@ Debugging
 * Take a break for a while, sometimes what you see in the code is what you meant rather than what you wrote.
 
 
-# No Clues, Hard Bugs
+No Clues, Hard Bugs
+-------------------
 
 **Make the bug reproducible**
 * The first step is to make sure you can make the bug appear on demand. Spend time constructing input and parameter
