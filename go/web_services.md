@@ -13,8 +13,10 @@ You want to build a web service?
 * One helpful library for debugging is net/http/pprof
 
 **Shutdown**
-* Every week, you want to turn on the server, and then shut it down with an interrupt signal to make sure
-  that your shutdown code is working.
+* Every day (except Friday):
+  1. turn on the server; signal shutdown. 
+  2. turn on server; run load through it; signal shutdown.
+  3. turn on server; run load through; interrupt while load is going through.
 * The shutdown should be clean, and only be able to happen at the application level. Packages may be able to signal
   that a shutdown might be necessary, but they shouldn't have the ability to shut it down.
 
