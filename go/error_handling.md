@@ -33,7 +33,8 @@ func Write(w io.Write, buf []byte) error {
 ```
 *If you pass in nil, it will return nil*, you don't need to add the additional `if err != nil` piece.
 
-**Summary**
+Summary
+-------
 * Errors are part of your package's public API.
 * Treat errors as opaque; assert for behavior, not type.
 * Minimize sentinel errors in your program.
