@@ -28,9 +28,9 @@ The Zen of Go
 
 **Return early rather than nesting deeply**
 * Avoid control flow that requires deep indentation.
-..* Using guard clauses to return early if a precondition isn't met.
-..* Placing successful returns at the end of function rather than inside a condition block.
-..* Reducing overall indentaion level of the function by extracting functions and methods.
+  * Using guard clauses to return early if a precondition isn't met.
+  * Placing successful returns at the end of function rather than inside a condition block.
+  * Reducing overall indentaion level of the function by extracting functions and methods.
 
 * Every time you indent you add another precondition to the programmer's stack, consuming one
   of their 7 short term memory slots. Rather than nesting deeply, keep the successful path
