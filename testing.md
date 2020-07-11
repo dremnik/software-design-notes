@@ -2,6 +2,10 @@
 
 Systematic Testing
 ------------------
+
+> Getting the easy cases right is seductive; hard cases must be tested too.
+> Automated, systematic testing is the best way to avoid this trap.
+
 **Test incrementally**
 * Testing should happen alongside program construction. If you try to test large program at once,
   it will likely have more complexity than you can handle.
@@ -53,8 +57,9 @@ Stress Tests
 * Random inputs are another way to assault a program in the hope of breaking something.
 
 **Examples**
-* Any program that reads files should be tested on an empty file; any program that reads text on binary data;
-  any program that reads text lines on huge lines and input with no newlines.
+1. Any program that reads files should be tested on an empty file.
+2. Any program that reads text on binary data.
+3. Any program that reads text lines on huge lines and input with no newlines.
 
 
 Tips for Testing
