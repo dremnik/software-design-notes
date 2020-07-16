@@ -26,7 +26,7 @@
   ```
   Once the MaxOutstanding number of handlers are executing process, each new call to handle
   in any new requests will block at `sem <- 1`, waiting for queue to drain to send a value
-  into the channel.
+  into the channel. Once it's done, it will receive from the channel which opens it for sending from another handler.
   We have to shadow req in each iteration, which creates a fresh version of the variable, 
   because we don't want the goroutines having shared access to the for loops iteration variable.
 
