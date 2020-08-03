@@ -34,8 +34,39 @@ Tuning the Code
 
 **Replace expensive operations by cheap ones**
 * Perhaps you want to decide which of two points is further away in a plane, but don't need the actual distance.
-  Instead of computing the distance formula with the sqrt, you could omit the sqrt and compare the squares. 
+  Instead of computing the distance formula with the sqrt, you could omit the sqrt and compare the squares.
   (The bigger distance will also have a bigger square). This avoids unnecessary computatation.
 
 **Cache frequently used values**
 * Cached values don't have to be recomputed, they can simply be looked up for later.
+* Caching takes advantage of *locality*, the tendency for programs (and people) to re-use recently accessed or nearby items.
+* It's best if the caching operation is invisible from the outside, so it doesn't affect the rest of the program except runtime.
+
+**Write a special purpose allocator**
+* Often of hot spot in a program is memory allocation, which manifests as a lot of calls to malloc or new. When most request are for
+  blocks of the same size, a special purpose allocator can make one call to malloc to get a big array of items, and hand them out
+  one at a time. Freed items are placed in a *free list* to be reused quickly.
+
+**Precompute results**
+* Sometimes you can precompute values so they are ready when they are needed. If a graphics system needs to repeatedly compute a math
+  function like sine, but only for a discrete set of values, it would be faster to precompute a table with the values and then
+  refer to them when necessary.
+
+Space Efficiency
+----------------
+
+The first approach these days to optimizing space should be the same as improving speed: *don't bother*.
+However, there will sometimes be situations in which it will be necessary to save space.
+
+**Save space by using the smallest possible data type**
+
+**Don't store what you can easily recompute**
+* Changes like this are minor. Major improvements are likely to come from better data structures, perhaps with algorithm changes.
+
+Summary
+-------
+
+Once you have chosen the right algorithm, performance is usually the last thing to worry about as you write a program. If you must think about it,
+however, the general process is to measure, and focus on the hot spots that will make the most difference, and verify that your changes are correct.
+Benchmarking can be managed in a similar way to the management of testing. Timing tests are run automatically; outputs include enough
+identification that they can be understood and replicated; records are kept and significant changes can be observed.
