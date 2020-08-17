@@ -32,3 +32,15 @@ Program Organization
 * Prefer to assume that standard environments will features present in standard libraries,
   rather than provide band-aid fixes for environments in which certain files are not defined.
 
+Isolation
+---------
+* *Localize system dependencies in separate files.*
+* *Hide system dependencies behind interfaces.*
+* By using only interfaces instead of mechanisms which depend on the underlying system, you are able to have
+  a program run on any system that implements that interface. (think TCP or HTTP- anyone can implement those protocols).
+
+Upgrades
+--------
+* If you change the specification, give the program a new name.
+* *Maintain compatibility with existing programs and data.*
+
