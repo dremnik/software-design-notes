@@ -1,7 +1,6 @@
 # Data Types
 
-Compound Types
---------------
+## Compound Types
 
 **Tuple**
 
